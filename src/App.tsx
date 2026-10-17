@@ -3,7 +3,8 @@ import css from './components/App/App.module.css';
 import CafeInfo from './components/CafeInfo/CafeInfo';
 import Notification from './components/Notification/Notification';
 import { VoteOptions } from './components/VoteOptions/VoteOptions';
-import VoteStats, { type VoteResults, type VoteType } from './components/VoteStats/VoteStats';
+import VoteStats from './components/VoteStats/VoteStats';
+import type { VoteResults, VoteType } from './types/votes';
 
 export default function App() {
     const [votes, setVotes] = useState<VoteResults>({
